@@ -114,5 +114,11 @@ h1, h2, p {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        .icon {
+            transition: 0.2s;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
     }
 }

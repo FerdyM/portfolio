@@ -28,9 +28,9 @@ const Main = () => {
                         <h2 className="profile-sub-title">Full Stack Developer</h2>
                     </div>
                     <div className="social-icons">
-                        <img src={GitLogo} alt="Link to my github"/>
-                        <img src={LinkLogo} alt="Link to my linkedin"/>
-                        <img src={TwitLogo} alt="Link to my twitter"/>
+                        <a href="https://github.com/FerdyM"><img className="icon icon1" src={GitLogo} alt="Link to my github"/></a>
+                        <a href="https://www.linkedin.com/in/ferdymacleod/"><img className="icon icon2" src={LinkLogo} alt="Link to my linkedin"/></a>
+                        <a href="https://twitter.com/ferdymacleod1"><img className="icon icon3" src={TwitLogo} alt="Link to my twitter"/></a>
                     </div>
                 </div>
                 
