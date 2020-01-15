@@ -1,10 +1,12 @@
 import React, { useState } from "react"
-import menu from "../images/menu.png"
+import menuImage from "../images/menu.png"
 
 const MenuItems = (props) => {
-    if (props.active) {
+    const animationIn = 'menu slide-in-right'
+    // const animationOut = 'menu slide-out-right'
+    if (props.menuActive) {
         return (
-            <ul className="menu">
+            <ul className={animationIn}>
                 <li className="menu-item">Home</li>
                 <li className="menu-item">Projects</li>
                 <li className="menu-item">Skills</li>
@@ -17,21 +19,19 @@ const MenuItems = (props) => {
 }
 
 const Navbar = () => {
-    const [active, setActive] = useState(false)
+    const [menuActive, setMenuActive] = 
+    useState(false)
 
     return (
         <>
             <div className="navbar">
                 <div className="menu-div" id="menu-div" onClick={() => {
-                    setActive(!active)
-                    if (active) {
-                        console.log('triggered')
-                    }
+                    setMenuActive(!menuActive)
                 }}>
-                    <img className="menu-icon" alt="" src={menu}/>
+                    <img className="menu-icon" alt="" src={menuImage}/>
                 </div>  
             </div>
-            <MenuItems active={active}/>
+            <MenuItems menuActive={menuActive} />
         </>
     )
 }
