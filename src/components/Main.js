@@ -4,7 +4,7 @@ import GitLogo from "../images/github.png"
 import TwitLogo from "../images/twitter.png"
 import LinkLogo from "../images/linkedin.png"
 
-const Landing = () => {
+const Landing = () => { 
     return (
         <div className="landing-div">
             <div className="title-div">
@@ -25,6 +25,23 @@ const AboutMyself = () => {
             ac feugiat tempor.</p>
             <p className="about-myself-para about-myself-para2">Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit.</p>
+            <h1 className="my-passion-title">My Passion</h1>
+            <p className="my-passion-para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Sed nec ultricies enim, quis convallis arcu. Aenean semper orci et arcu placerat, et 
+             maximus risus fringilla. Curabitur vestibulum porttitor massa ac dignissim. Suspendisse id 
+             elit quis magna aliquet ornare. Praesent id purus nibh. Praesent interdum vehicula augue, 
+             sed porta metus vulputate id. </p>
+             <p className="my-passion-para2">Aliquam cursus, turpis quis convallis 
+             egestas, dolor erat pretium arcu, non consectetur felis augue a leo. Donec ipsum leo, viverra 
+             ac sagittis sed, porta sed tortor. Phasellus et sodales libero. Duis turpis tellus, dapibus sit 
+             amet massa vitae, commodo ullamcorper enim. Vestibulum auctor felis et elit interdum dignissim 
+             a at tellus. Fusce dignissim nec nulla et semper.</p>
+             <h1 className="why-coding-title">Why Coding?</h1>
+             <p className="my-passion-para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Sed nec ultricies enim, quis convallis arcu. Aenean semper orci et arcu placerat, et 
+             maximus risus fringilla. Curabitur vestibulum porttitor massa ac dignissim. Suspendisse id 
+             elit quis magna aliquet ornare. Praesent id purus nibh. Praesent interdum vehicula augue, 
+             sed porta metus vulputate id. </p>
         </div>
     )
 }

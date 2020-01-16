@@ -94,6 +94,7 @@ h1, h2, p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 60px;
     .profile-pic {
         border-radius: 50%;
         width: 150px;
@@ -128,23 +129,33 @@ h1, h2, p {
         }
     }
 }
-.about-myself-title {
-    margin: 30px 0;
-    height: 50px;
-    width: 245px;
-    background-color: white;
-    font-size: 40px;
-    text-align: right;
-    font-weight: bold;
-    padding-right: 10px;
-    font-family: 'Roboto';
-}
+.about-myself-wrapper {
+    h1 {
+        margin: 30px 0;
+        height: 50px;
+        width: 245px;
+        background-color: white;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Roboto';
+    }
 
-.about-myself-para {
-    font-size: 24px;
-    color: white;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    p {
+        font-size: 24px;
+        color: white;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .about-myself-title, .why-coding-title {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .my-passion-title {
+        position: relative;
+        margin-left: auto;
+        padding-left: 10px;
+        margin-top: 60px;
+    }
 }
 
 .slide-in-right {
