@@ -3,14 +3,13 @@ import menuImage from "../images/menu.png"
 
 const MenuItems = (props) => {
     const animationIn = 'menu slide-in-right'
-    // const animationOut = 'menu slide-out-right'
     if (props.menuActive) {
         return (
             <ul className={animationIn}>
-                <li className="menu-item">Home</li>
-                <li className="menu-item">Projects</li>
-                <li className="menu-item">Skills</li>
-                <li className="menu-item">About</li>
+                <a href="/"><li className="menu-item">Home</li></a>
+                <a href="/projects"><li className="menu-item">Projects</li></a>
+                <a href="/"><li className="menu-item">Skills</li></a>
+                <a href="/"><li className="menu-item">About</li></a>
             </ul>
         )
     } else {
