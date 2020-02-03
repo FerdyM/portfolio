@@ -1,9 +1,11 @@
 import React from "react"
 import Navbar from "./Navbar"
+import GitLogo from "../images/github.png"
+import Pic from "../images/pic.jpeg"
 
 const ExampleProject = {
     title: "VisualSort",
-    images: ['src/images/github.png', 'src/images/linkedin.png', 'src/images/twitter.png'],
+    images: [GitLogo, Pic],
     text: 'this is just example placeholder text im using in order to make an example',
     techStack: ['Link to react logo', 'link to js logo', 'you get the point']
 }

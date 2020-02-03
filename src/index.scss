@@ -196,7 +196,9 @@ h1, h2, p {
     padding-top: 60px;
     width: 100%;
     background: black;
-    height: calc(100vh - 60px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .project-card {
@@ -204,4 +206,29 @@ h1, h2, p {
     height: 600px;
     border-radius: 20px;
     border: 3px solid white;
+    overflow: hidden;
+    display: grid;
+    .project-img {
+        grid-row: 1/2;
+        width: 270px;
+        height: 270px;
+        border-radius: 20px;
+        background: blue;
+    }
+    .img-selector-wrapper {
+        height: 40px;
+        width: 100%;
+        background: yellow;
+    }
+    .tech-stack-icons-wrapper {
+        min-height: 40px;
+        width: 100%;
+        background: yellow;
+    }
+    .project-buttons-wrapper {
+        bottom: 0;
+        min-height: 40px;
+        width: 100%;
+        background: white;
+    }
 }
