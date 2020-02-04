@@ -199,6 +199,7 @@ h1, h2, p {
     height: 100vh;
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .project-card {
@@ -207,7 +208,9 @@ h1, h2, p {
     border-radius: 20px;
     border: 3px solid white;
     overflow: hidden;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+
     .project-img {
         grid-row: 1/2;
         width: 270px;
@@ -215,19 +218,32 @@ h1, h2, p {
         border-radius: 20px;
         background: blue;
     }
-    .img-selector-wrapper {
-        height: 40px;
-        width: 100%;
-        background: yellow;
-    }
-    .tech-stack-icons-wrapper {
-        min-height: 40px;
-        width: 100%;
-        background: yellow;
+    .project-main-content-wrapper {
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .img-selector-wrapper {
+            min-height: 40px;
+            width: 100%;
+            background: yellow;
+        }
+        .project-text {
+            padding-left: 10px;
+        }
+        .tech-stack-icons-wrapper {
+            min-height: 40px;
+            width: 100%;
+            .tech-stack-icon {
+                height: 40px;
+                width: 40px;
+                padding-left: 10px;
+            }
+        }
     }
     .project-buttons-wrapper {
-        bottom: 0;
-        min-height: 40px;
+        margin-top: auto;
+        height: 60px;
         width: 100%;
         background: white;
     }

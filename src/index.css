@@ -292,7 +292,14 @@ h1, h2, p {
   padding-top: 60px;
   width: 100%;
   background: black;
-  height: calc(100vh - 60px);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
 }
 
 .project-card {
@@ -300,5 +307,65 @@ h1, h2, p {
   height: 600px;
   border-radius: 20px;
   border: 3px solid white;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-card .project-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 270px;
+  height: 270px;
+  border-radius: 20px;
+  background: blue;
+}
+
+.project-card .project-main-content-wrapper {
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-card .project-main-content-wrapper .img-selector-wrapper {
+  min-height: 40px;
+  width: 100%;
+  background: yellow;
+}
+
+.project-card .project-main-content-wrapper .project-text {
+  padding-left: 10px;
+}
+
+.project-card .project-main-content-wrapper .tech-stack-icons-wrapper {
+  min-height: 40px;
+  width: 100%;
+}
+
+.project-card .project-main-content-wrapper .tech-stack-icons-wrapper .tech-stack-icon {
+  height: 40px;
+  width: 40px;
+  padding-left: 10px;
+}
+
+.project-card .project-buttons-wrapper {
+  margin-top: auto;
+  height: 60px;
+  width: 100%;
+  background: white;
 }
 /*# sourceMappingURL=index.css.map */
